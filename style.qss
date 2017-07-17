@@ -1,0 +1,677 @@
+/*************全局设置***************/
+QWidget
+{
+    font-family:"微软雅黑";
+}
+
+/*************基站表单***************/
+
+
+BaseStationForm
+{
+    border:1px solid red;
+}
+
+BaseStationForm QLabel
+{
+  font-weight:bold;
+}
+QScrollArea#scrollArea
+{
+    background:white;
+    border-left:1px solid black;
+    border-right:1px solid black;
+    border-bottom:none;
+    border-top:none;
+}
+QWidget#widget_1
+{
+    border-left:none;
+    border-right:none;
+    border-top:none;
+    background:white;
+}
+
+QWidget#widget_2
+{
+    background:transparent;
+    width:500;
+    height:200;
+    border-top:1px solid rgb(111,156,207);
+    border-left:1px solid rgb(111,156,207);
+    border-right:1px solid rgb(111,156,207);
+    border-bottom:1px solid rgb(111,156,207);
+}
+QLineEdit
+{
+    width:300;
+    height:30;
+    border-radius:4px;
+    border:1px solid rgb(111,156,207);
+    background:white;
+}
+QLineEdit:enabled
+{
+    color:rgb(84,84,84);
+}
+QLineEdit:enabled:hover,QLineEdit:enabled:focus
+{
+    color:rgb(51,51,51);
+}
+QLineEdit:!enabled
+{
+    color:rgb(80,80,80);
+}
+QLabel
+{
+    color:black;
+    font-size:16px;
+    /*font-family:"微软雅黑";*/
+}
+
+QPushButton#chk_btn
+{
+    background:#4876FF;
+    color:white;
+}
+QPushButton#chk_btn:hover
+{
+    background:#87CEFF;
+}
+QPushButton#chk_btn:pressed
+{
+    background:#436EEE;
+}
+QPushButton#can_btn
+{
+    background:#EE5C42;
+    color:white;
+}
+QPushButton#can_btn:hover
+{
+    background:#EE8262;
+}
+QPushButton#can_btn:pressed
+{
+    background:#EE4000;
+}
+
+/****************基站管理表格*******************/
+
+
+QTabWidget::pane {
+        border: none;
+        border-top: 3px solid rgb(0, 78, 161);
+        background: rgb(187, 212, 238);
+}
+QTabWidget::tab-bar {
+        border: none;
+}
+QTabBar::tab {
+        border: none;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+        color: white;
+        background: rgb(120, 170, 220);
+        height: 28px;
+        min-width: 85px;
+        margin-right: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+}
+QTabBar::tab:hover {
+        background: rgb(0, 78, 161);
+}
+QTabBar::tab:selected {
+        color: white;
+        background: rgb(0, 78, 161);
+}
+
+QTabWidget#tabWidget::pane {
+        border: 1px solid rgb(111, 156, 207);
+        background: rgb(232, 241, 252);
+        margin-top: -1px;
+}
+
+QTabBar#tabBar::tab {
+        border: 1px solid rgb(111, 156, 207);
+        border-bottom: none;
+        color: rgb(70, 71, 73);
+        background: transparent;
+}
+QTabBar#tabBar::tab:hover {
+        color: rgb(2, 65, 132);
+}
+QTabBar#tabBar::tab:selected {
+        color: rgb(2, 65, 132);
+        background: rgb(232, 241, 252);
+}
+
+QPushButton
+{
+    border-radius:4px;
+    border:none;
+    width:80px;
+    height:30px;
+
+}
+
+JzWidget QPushButton:enabled
+{
+    background:rgb(120,170,220);
+    color:white;
+    font-family:"微软雅黑";
+}
+JzWidget QPushButton:!enabled
+{
+    background:rgb(180,180,180);
+}
+JzWidget QPushButton:enabled:hover
+{
+    background:rgb(100,160,220);
+}
+JzWidget QPushButton:enabled:pressed
+{
+    background:rgb(0,78,161);
+}
+QPushButton#nextPage:enabled
+{
+    image:url(:/new/White/nextpage1);
+    background:transparent;
+}
+QPushButton#nextPage:enabled:hover
+{
+    image:url(:/new/White/nextpage2);
+    background:transparent;
+}
+QPushButton#nextPage:enabled:pressed
+{
+    image:url(:/new/White/nextpage3);
+    background:transparent;
+}
+QPushButton#prePage:enabled
+{
+    image:url(:/new/White/prepage1);
+    background:transparent;
+}
+QPushButton#prePage:enabled:hover
+{
+    image:url(:/new/White/prepage2);
+    background:transparent;
+}
+QPushButton#prePage:enabled:pressed
+{
+    image:url(:/new/White/prepage3);
+    background:transparent;
+}
+QPushButton#firstPage:enabled
+{
+    image:url(:/new/White/firstpage1);
+    background:transparent;
+}
+QPushButton#firstPage:enabled:hover
+{
+    image:url(:/new/White/firstpage2);
+    background:transparent;
+}
+QPushButton#firstPage:enabled:pressed
+{
+    image:url(:/new/White/firstpage3);
+    background:transparent;
+}
+QPushButton#lastPage:enabled
+{
+    image:url(:/new/White/lastpage1);
+    background:transparent;
+}
+QPushButton#lastPage:enabled:hover
+{
+    image:url(:/new/White/lastpage2);
+    background:transparent;
+}
+QPushButton#lastPage:enabled:pressed
+{
+    image:url(:/new/White/lastpage3);
+    background:transparent;
+}
+/***************滚动条******************/
+
+QScrollBar:horizontal {
+        height: 20px;
+        background: transparent;
+        margin-top: 3px;
+        margin-bottom: 3px;
+}
+QScrollBar::handle:horizontal {
+        height: 20px;
+        min-width: 30px;
+        background: rgb(170, 200, 230);
+        margin-left: 15px;
+        margin-right: 15px;
+}
+QScrollBar::handle:horizontal:hover {
+        background: rgb(165, 195, 225);
+}
+QScrollBar::sub-line:horizontal {
+        width: 15px;
+        background: transparent;
+        image: url(:/new/White/arrowLeft);
+        subcontrol-position: left;
+}
+QScrollBar::add-line:horizontal {
+        width: 15px;
+        background: transparent;
+        image: url(:/new/White/arrowRight);
+        subcontrol-position: right;
+}
+QScrollBar::sub-line:horizontal:hover {
+        background: rgb(170, 200, 230);
+}
+QScrollBar::add-line:horizontal:hover {
+        background: rgb(170, 200, 230);
+}
+QScrollBar::add-page:horizontal,QScrollBar::sub-page:horizontal {
+        background: transparent;
+}
+
+QScrollBar:vertical {
+        width: 20px;
+        background: transparent;
+        margin-left: 3px;
+        margin-right: 3px;
+}
+QScrollBar::handle:vertical {
+        width: 20px;
+        min-height: 30px;
+        background: rgb(170, 200, 230);
+        margin-top: 15px;
+        margin-bottom: 15px;
+}
+QScrollBar::handle:vertical:hover {
+        background: rgb(165, 195, 225);
+}
+QScrollBar::sub-line:vertical {
+        height: 15px;
+        background: transparent;
+        image: url(:/new/White/topArrow);
+        subcontrol-position: top;
+}
+QScrollBar::add-line:vertical {
+        height: 15px;
+        background: transparent;
+        image: url(:/new/White/bottomArrow);
+        subcontrol-position: bottom;
+}
+QScrollBar::sub-line:vertical:hover {
+        background: rgb(170, 200, 230);
+}
+QScrollBar::add-line:vertical:hover {
+        background: rgb(170, 200, 230);
+}
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+        background: transparent;
+}
+
+QScrollBar#verticalScrollBar:vertical {
+        margin-top: 30px;
+}
+
+/*****************表  头*********************/
+
+QHeaderView{
+        border: none;
+        border-bottom: 3px solid rgb(0, 78, 161);
+        background: transparent;
+        min-height: 30px;
+        font-family:"微软雅黑";
+}
+QHeaderView::section:horizontal {
+        border: none;
+        color: rgb(2, 65, 132);
+        background: transparent;
+        padding-left: 5px;
+}
+QHeaderView::section:horizontal:hover {
+        color: white;
+        background: rgb(0, 78, 161);
+}
+QHeaderView::section:horizontal:pressed {
+        color: white;
+        background: rgb(6, 94, 187);
+}
+QHeaderView::up-arrow {
+        width: 13px;
+        height: 11px;
+        padding-right: 5px;
+        image: url(:/White/topArrow);
+        subcontrol-position: center right;
+}
+QHeaderView::up-arrow:hover, QHeaderView::up-arrow:pressed {
+        image: url(:/new/White/topArrowHover);
+}
+QHeaderView::down-arrow {
+        width: 13px;
+        height: 11px;
+        padding-right: 5px;
+        image: url(:/new/White/bottomArrow);
+        subcontrol-position: center right;
+}
+QHeaderView::down-arrow:hover, QHeaderView::down-arrow:pressed {
+        image: url(:/new/White/bottomArrowHover);
+}
+
+
+/******************表  格**********************/
+
+QTableView {
+        border: 1px solid rgb(111, 156, 207);
+        background: rgb(224, 238, 255);
+        gridline-color: rgb(111, 156, 207);
+}
+QTableView::item {
+        padding-left: 5px;
+        padding-right: 5px;
+        border: none;
+        background: white;
+        border-right: 1px solid rgb(111, 156, 207);
+        border-bottom: 1px solid rgb(111, 156, 207);
+}
+QTableView::item:selected {
+        background: rgba(255, 255, 255, 0.5);
+        color:black;
+}
+QTableView::item:selected:!active {
+       /* color: rgb(65, 65, 65);*/
+       color:black;
+}
+QTableView::indicator {
+        width: 20px;
+        height: 20px;
+}
+QTableView::indicator:enabled:unchecked {
+        image: url(:/new/White/checkBox);
+}
+QTableView::indicator:enabled:unchecked:hover {
+        image: url(:/new/White/checkBoxHover);
+}
+QTableView::indicator:enabled:unchecked:pressed {
+        image: url(:/new/White/checkBoxPressed);
+}
+QTableView::indicator:enabled:checked {
+        image: url(:/new/White/checkBoxChecked);
+}
+QTableView::indicator:enabled:checked:hover {
+        image: url(:/new/White/checkBoxCheckedHover);
+}
+QTableView::indicator:enabled:checked:pressed {
+        image: url(:/new/White/checkBoxCheckedPressed);
+}
+QTableView::indicator:enabled:indeterminate {
+        image: url(:/new/White/checkBoxIndeterminate);
+}
+QTableView::indicator:enabled:indeterminate:hover {
+        image: url(:/new/White/checkBoxIndeterminateHover);
+}
+QTableView::indicator:enabled:indeterminate:pressed {
+        image: url(:/new/White/checkBoxIndeterminatePressed);
+}
+
+IndexWidget QToolButton
+{
+    border-radius:4px;
+    border:none;
+    width:90px;
+    height:25px;
+}
+
+IndexWidget QToolButton:enabled
+{
+    background:rgb(120,170,220);
+    color:white;
+    font-family:"微软雅黑";
+}
+
+IndexWidget QToolButton:!enabled
+{
+    background:rgb(180,180,180);
+}
+IndexWidget QToolButton:enabled:hover
+{
+    background:rgb(100,160,220);
+}
+IndexWidget QToolButton:enabled:pressed
+{
+    background:rgb(0,78,161);
+}
+
+
+
+LoMoWidget QToolButton
+{
+    border-radius:4px;
+    border:none;
+
+    height:25px;
+}
+
+LoMoWidget QToolButton:enabled
+{
+    background:rgb(120,170,220);
+    color:white;
+    font-family:"微软雅黑";
+}
+
+LoMoWidget QToolButton:!enabled
+{
+    background:rgb(180,180,180);
+}
+LoMoWidget QToolButton:enabled:hover
+{
+    background:rgb(100,160,220);
+}
+LoMoWidget QToolButton:enabled:pressed
+{
+    background:rgb(0,78,161);
+}
+
+LoMoWidget QCheckBox
+{
+    color:rgb(0,78,161);
+    font-family:"微软雅黑";
+}
+
+QCheckBox::indicator:enabled:unchecked
+{
+    image: url(:/new/White/checkBox);
+}
+QCheckBox::indicator:enabled:unchecked:hover
+{
+    image: url(:/new/White/checkBoxHover);
+}
+QCheckBox::indicator:enabled:unchecked:pressed
+{
+    image: url(:/new/White/checkBoxPressed);
+}
+QCheckBox::indicator:enabled:checked {
+        image: url(:/new/White/checkBoxChecked);
+}
+QCheckBox::indicator:enabled:checked:hover {
+        image: url(:/new/White/checkBoxCheckedHover);
+}
+QCheckBox::indicator:enabled:checked:pressed {
+        image: url(:/new/White/checkBoxCheckedPressed);
+}
+QCheckBox::indicator:enabled:indeterminate {
+        image: url(:/new/White/checkBoxIndeterminate);
+}
+QCheckBox::indicator:enabled:indeterminate:hover {
+        image: url(:/new/White/checkBoxIndeterminateHover);
+}
+QCheckBox::indicator:enabled:indeterminate:pressed {
+        image: url(:/new/White/checkBoxIndeterminatePressed);
+}
+
+LoMoWidget QRadioButton
+{
+    color:rgb(0,78,161);
+}
+QRadioButton::indicator:enabled
+{
+    image: url(:/new/White/radioButton);
+}
+QRadioButton::indicator:enabled:hover
+{
+    image: url(:/new/White/radioButtonHover);
+}
+QRadioButton::indicator:enabled:pressed
+{
+    image: url(:/new/White/radioButtonPressed);
+}
+QRadioButton::indicator:enabled:checked
+{
+    image: url(:/new/White/radioButtonChecked);
+}
+QRadioButton::indicator:enabled:checked:hover
+{
+    image: url(:/new/White/radioButtonCheckedHover);
+}
+QRadioButton::indicator:enabled:checked:pressed
+{
+    image: url(:/new/White/radioButtonCheckedPressed);
+}
+
+LoMoWidget QToolButton#scan
+{
+    height:17px;
+    font-size:11px;
+}
+
+LoMoWidget QPushButton#pushbutton1
+{
+    border-radius:4px;
+    border:none;
+    width:90px;
+    height:25px;
+
+}
+LoMoWidget QPushButton#pushbutton1:enabled
+{
+    background:rgb(120,170,220);
+    color:white;
+}
+
+LoMoWidget QPushButton#pushbutton1:!enabled
+{
+    background:rgb(180,180,180);
+}
+LoMoWidget QPushButton#pushbutton1:enabled:hover
+{
+    background:rgb(100,160,220);
+}
+LoMoWidget QPushButton#pushbutton1:enabled:pressed
+{
+    background:rgb(0,78,161);
+}
+
+LoMoWidget QLabel
+{
+    color:rgb(0,78,161);
+    font-weight:fold;
+}
+
+
+QSlider::groove:horizontal {
+    border: 1px solid #4A708B;
+    background: #C0C0C0;
+
+    height: 5px;
+    border-radius: 1px;
+    padding-left:-1px;
+    padding-right:-1px;
+}
+
+QSlider::sub-page:horizontal {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+        stop:0 #B1B1B1, stop:1 #c4c4c4);
+    background: qlineargradient(x1: 0, y1: 0.2, x2: 1, y2: 1,
+        stop: 0 #5DCCFF, stop: 1 #1874CD);
+    border: 1px solid #4A708B;
+    height: 10px;
+    border-radius: 2px;
+}
+
+QSlider::add-page:horizontal {
+    background: transparent;
+    border: 0px solid #777;
+    height: 10px;
+    border-radius: 2px;
+}
+
+QSlider::handle:horizontal
+{
+    background: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5,
+    stop:0.6 #45ADED, stop:0.778409 rgba(255, 255, 255, 255));
+
+    width: 11px;
+    margin-top: -3px;
+    margin-bottom: -3px;
+    border-radius: 5px;
+}
+
+QSlider::handle:horizontal:hover {
+    background: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0.6 #2A8BDA,
+    stop:0.778409 rgba(255, 255, 255, 255));
+
+    width: 11px;
+    margin-top: -3px;
+    margin-bottom: -3px;
+    border-radius: 5px;
+}
+
+QSlider::sub-page:horizontal:disabled {
+    background: #00009C;
+    border-color: #999;
+}
+
+QSlider::add-page:horizontal:disabled {
+    background: #eee;
+    border-color: #999;
+}
+
+QSlider::handle:horizontal:disabled {
+    background: #eee;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+}
+/*******************电子围栏样式**********************/
+ElecFenceWidget QToolButton
+{
+border-radius:4px;
+border:none;
+width:90px;
+height:25px;
+color:white;
+}
+ElecFenceWidget QToolButton:!enabled
+{
+    background:rgb(180,180,180);
+}
+ElecFenceWidget QToolButton:enabled
+{
+    background:rgb(120,170,220);
+}
+ElecFenceWidget QToolButton:enabled:hover
+{
+    background:rgb(100,160,220);
+}
+ElecFenceWidget QToolButton:enabled:pressed
+{
+    background:rgb(0,78,161);
+}
+
+ElecFenceWidget QLabel
+{
+    color:rgb(0,78,161);
+    font-weight:fold;
+    font-size:13px;
+}

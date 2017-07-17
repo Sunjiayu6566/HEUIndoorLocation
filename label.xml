@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<layout>
+		<Node label="标签信息"></Node>
+		<Node label="标签状态" collapse="0">
+			<Node label="状态显示"></Node>
+			<Node label="历史状态" ></Node>
+		</Node>
+		<Node label="生命特征"></Node>
+		<Node label="消息推送" ></Node>
+	</layout>
+</root>

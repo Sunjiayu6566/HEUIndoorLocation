@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<layout>
+		<Node label="基站信息"></Node>
+		<Node label="基站类别"></Node>
+		<Node label="基站状态" collapse="0">
+			<Node label="基站详情"></Node>
+			<Node label="历史状态" ></Node>
+		</Node>
+		<Node label="传感器" collapse="0">
+			<Node label="传感器缓存"></Node>
+			<Node label="状态保存" ></Node>
+		</Node>
+	</layout>
+</root>

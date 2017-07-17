@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<layout>
+		<Node label="上班识别" collapse="0">
+			<Node label="打卡识别"></Node>
+			<Node label="到岗人员" ></Node>
+                        <Node label="未到岗人员"></Node>
+		</Node>
+		<Node label="电子点名"></Node>
+                <Node label="下班识别"></Node>
+	        <Node label="工时统计"></Node>
+		
+	</layout>
+</root>
